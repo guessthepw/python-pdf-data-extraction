@@ -16,7 +16,7 @@ from docx.shared import Inches
 import sys
 import os
 
-tessdata_dir_config = '--tessdata-dir "/Users/johnherbener/tesseract/tessdata"'
+tessdata_dir_config = os.getenv('TESSDATA_PREFIX')
 doc = DocxTemplate("template.docx")
 specs = ""
 ph1 = InlineImage(doc, image_descriptor="p1.png") #Lockson Logo
