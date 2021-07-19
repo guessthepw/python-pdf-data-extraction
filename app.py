@@ -15,7 +15,6 @@ from docxtpl import DocxTemplate, InlineImage
 from docx.shared import Inches
 import sys
 import os
-import glob
 
 tessdata_dir_config = '--tessdata-dir "/Users/johnherbener/tesseract/tessdata"'
 doc = DocxTemplate("template.docx")
